@@ -13,8 +13,11 @@ struct BaseButton: View {
     let action: () -> Void
     
     var body: some View {
-        Button(title, action: action)
-            .buttonStyle(.bordered)
+        Button(title) {
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            action()
+        }
+        .buttonStyle(.bordered)
     }
 }
 

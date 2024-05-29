@@ -22,6 +22,10 @@ struct ContentView: View {
                 }
                 
                 InputBlock {
+                    Text("Slider Input TODO")
+                }
+                
+                InputBlock {
                     Text("Random Input TODO")
                 }
                 
@@ -29,6 +33,7 @@ struct ContentView: View {
             }
             .padding()
         }
+        .scrollIndicators(.hidden)
     }
 }
 

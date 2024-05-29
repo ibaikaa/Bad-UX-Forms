@@ -12,6 +12,7 @@ struct Bad_UX_FormsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.light)
         }
     }
 }
